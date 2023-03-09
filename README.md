@@ -1,4 +1,4 @@
-# Freebayes
+# Beagle
 
 This is a docker image inspired by
 [biocontainer beagle image](https://github.com/BioContainers/containers/blob/master/beagle/5.0-180928dfsg-1-deb/Dockerfile)
