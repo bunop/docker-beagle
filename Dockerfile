@@ -44,4 +44,7 @@ RUN mkdir -p /opt/beagle.${BEAGLE_VERSION}
 ADD http://faculty.washington.edu/browning/beagle/beagle.${BEAGLE_VERSION} /opt/beagle.${BEAGLE_VERSION}/beagle.jar
 COPY beagle /opt/beagle.${BEAGLE_VERSION}/beagle
 
+# mind to permissions
+RUN chmod 644 /opt/beagle.${BEAGLE_VERSION}/beagle.jar
+
 RUN ln -s /opt/beagle.${BEAGLE_VERSION}/beagle /usr/local/bin/beagle
